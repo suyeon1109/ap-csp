@@ -13,8 +13,9 @@ public class ans1 {
 
 	static void print(int[] ary) {
 		for (int i=0;i<ary.length;i++) {
-			System.out.println(ary[i]);
+			System.out.printf("%d   ",ary[i]);
 		}
+		System.out.println();
 	}
 
 	static int arrSum(int[] ary) {
@@ -57,11 +58,14 @@ public class ans1 {
 		print(testArr);
 		System.out.printf("average of the array elements = %d",arrSum(testArr));
 		
-		boolean testBool = contains(testArr, 12);
+		System.out.println();
+		boolean testBool = contains2(testArr, 12);
 		System.out.print("12 is in testArr: ");
 		System.out.print(testBool);
+		System.out.println();
 		
-		System.out.printf("12 = testArr[%d]",contains2(testArr,12));
+		System.out.printf("12 = testArr[%d]",contains(testArr,12));
+		System.out.println();
 
 		System.out.print(countMultiplesOf(testArr,7));
 	}
